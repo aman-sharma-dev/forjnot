@@ -1,0 +1,12 @@
+{
+	"name": "@stackbase/shared-types",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "tsc --project tsconfig.json --outDir dist"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
+}

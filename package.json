@@ -1,0 +1,43 @@
+{
+	"name": "stackbase",
+	"version": "1.0.0",
+	"packageManager": "pnpm@8.15.5",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"server": "pnpm --filter backend dev",
+		"build:all": "turbo run build",
+		"dev": "turbo run dev",
+		"lint": "biome lint .",
+		"format": "biome format . --write",
+		"test": "turbo run test",
+		"prepare": "husky",
+		"generate:module": "node ./.scripts/generate-module.cli.mjs",
+		"cli:help": "node ./.scripts/base.cli.mjs"
+	},
+	"lint-staged": {
+		"**/*.{ts,tsx,js,jsx,json,css,md}": [
+			"biome format --write",
+			"biome lint --write"
+		]
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"@types/node": "^22.10.7",
+		"husky": "^9.1.7",
+		"lint-staged": "^15.5.1",
+		"tsconfig-paths": "^4.2.0",
+		"turbo": "^2.5.0",
+		"typescript": "^5.7.3"
+	},
+	"dependencies": {
+		"chalk": "^5.4.1",
+		"dotenv": "^16.5.0",
+		"fs-extra": "^11.3.0",
+		"inquirer": "^12.5.2",
+		"zod": "^3.24.2"
+	}
+}

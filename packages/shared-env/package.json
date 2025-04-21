@@ -1,0 +1,19 @@
+{
+	"name": "@stackbase/shared-env",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "tsc --project tsconfig.json --outDir dist"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"zod": "^3.24.2"
+	},
+	"devDependencies": {
+		"@types/node": "^22.10.7",
+		"ts-node": "^10.9.2"
+	}
+}

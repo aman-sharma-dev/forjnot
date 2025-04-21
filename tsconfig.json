@@ -1,0 +1,13 @@
+{
+	"files": [],
+	"references": [
+		{ "path": "apps/backend" },
+		{ "path": "packages/shared-configs" },
+		{ "path": "packages/shared-constants" },
+		{ "path": "packages/shared-dtos" },
+		{ "path": "packages/shared-env" },
+		{ "path": "packages/shared-logger" },
+		{ "path": "packages/shared-types" },
+		{ "path": "packages/shared-utils" }
+	]
+}
