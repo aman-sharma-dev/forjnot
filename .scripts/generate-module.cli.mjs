@@ -9,7 +9,10 @@ const SUBFOLDER_OPTIONS = [
   'services',
   'dtos',
   'interfaces',
-  'repository',
+  'repositories',
+  'entities',
+  'middlewares',
+  'validators',
   'helpers',
   'controllers',
 ];
