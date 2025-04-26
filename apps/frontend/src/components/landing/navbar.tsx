@@ -53,6 +53,7 @@ export default function Navbar() {
 				<div className="flex items-center gap-2 md:hidden">
 					<ThemeToggle />
 					<button
+						type="button"
 						onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
 						className="rounded-md p-2 text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
 					>

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-import fs from 'fs';
-import path from 'path';
+import fs from 'node:fs';
+import path from 'node:path';
 import inquirer from 'inquirer';
 import chalk from 'chalk';
 
@@ -44,13 +44,13 @@ const generateModule = (moduleName, selectedFolders) => {
   const baseDir = path.join(process.cwd(), `/apps/backend/src/modules/${moduleName}`);
   fs.mkdirSync(baseDir, { recursive: true });
 
-  selectedFolders.forEach(folder => {
-    const folderPath = path.join(baseDir, folder);
-    fs.mkdirSync(folderPath, { recursive: true });
+for (const folder of selectedFolders) {
+  const folderPath = path.join(baseDir, folder);
+  fs.mkdirSync(folderPath, { recursive: true });
 
-    const indexPath = path.join(folderPath, 'index.ts');
-    fs.writeFileSync(indexPath, `// ${folder} index.ts file`);
-  });
+  const indexPath = path.join(folderPath, 'index.ts');
+  fs.writeFileSync(indexPath, `// ${folder} index.ts file`);
+}
 
   const moduleFilePath = path.join(baseDir, `${moduleName}.module.ts`);
   fs.writeFileSync(moduleFilePath, `import { Module } from '@nestjs/common';

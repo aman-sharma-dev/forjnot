@@ -17,7 +17,14 @@
 		"cli:help": "node ./.scripts/base.cli.mjs"
 	},
 	"lint-staged": {
-		"**/*.{ts,tsx,js,jsx,json,css,md}": ["biome format --write"]
+		"**/*.{ts,tsx,js,jsx,json,css,md}": [
+			"biome format --write",
+			"biome lint",
+			"git add"
+		],
+		"!packages/**/*": [],
+		"!apps/backend/dist/**/*": [],
+		"!apps/frontend/out/**/*": []
 	},
 	"keywords": [],
 	"author": "",

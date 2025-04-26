@@ -2,10 +2,10 @@
 
 import { Command } from 'commander';
 import inquirer from 'inquirer';
-import path from 'path';
-import fs from 'fs';
+import path from 'node:path';
+import fs from 'node:fs';
 import chalk from 'chalk';
-import { spawn } from 'child_process';
+import { spawn } from 'node:child_process';
 
 // Initialize the CLI program
 const program = new Command();
@@ -65,7 +65,7 @@ const mainMenu = async () => {
       runCommand('pnpm', ['run', 'server']);
       break;
     case 'generate:module':
-      console.log(chalk.green(`Generating a new module`));
+      console.log(chalk.green('Generating a new module'));
       runCommand('pnpm', ['run', 'generate:module']);
       break;
     default:
@@ -89,13 +89,13 @@ const generateModule = (moduleName) => {
   fs.mkdirSync(baseDir, { recursive: true });
 
   // Create subfolders and their index.ts files
-  subFolders.forEach(folder => {
+  for (const folder of subFolders) {
     const folderPath = path.join(baseDir, folder);
     fs.mkdirSync(folderPath, { recursive: true });
 
     const indexTsPath = path.join(folderPath, 'index.ts');
     fs.writeFileSync(indexTsPath, `// ${folder} index.ts file`);
-  });
+  }
 
   // Generate the users.module.ts
   const usersModulePath = path.join(baseDir, `${moduleName}.module.ts`);

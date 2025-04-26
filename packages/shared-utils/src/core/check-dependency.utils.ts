@@ -1,9 +1,9 @@
-import { INestApplication } from "@nestjs/common";
-import { InstanceWrapper } from "@nestjs/core/injector/instance-wrapper";
-import { Module } from "@nestjs/core/injector/module";
+import type { INestApplication } from "@nestjs/common";
+import type { InstanceWrapper } from "@nestjs/core/injector/instance-wrapper";
+import type { Module } from "@nestjs/core/injector/module";
 
 export async function CheckDependencies(app: INestApplication): Promise<void> {
-	const modules: Map<any, Module> = (app as any).container.getModules();
+const modules: Map<string, Module> = (app as INestApplication & { container: { getModules: () => Map<string, Module> } }).container.getModules();
 
 	for (const [, moduleRef] of modules) {
 		for (const [key, wrapper] of moduleRef.controllers as Map<

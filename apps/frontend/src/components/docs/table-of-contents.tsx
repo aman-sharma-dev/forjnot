@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 
 interface Heading {
@@ -13,45 +12,42 @@ interface Heading {
 export function TableOfContents() {
 	const [headings, setHeadings] = useState<Heading[]>([]);
 	const [activeId, setActiveId] = useState<string>("");
-	const pathname = usePathname();
 
 	useEffect(() => {
 		// Reset states when route changes
 		setHeadings([]);
-		setActiveId("");
 
-		// Wait for content to be rendered
-		setTimeout(() => {
-			const elements = Array.from(
-				document.querySelectorAll(".prose h2, .prose h3"),
-			)
-				.filter((element) => element.id && element.textContent)
-				.map((element) => ({
+		const timeoutId = setTimeout(() => {
+			const elements = Array.from(document.querySelectorAll("h2, h3"));
+			setHeadings(
+				elements.map((element) => ({
 					id: element.id,
 					text: element.textContent ?? "",
-					level: Number(element.tagName.charAt(1)),
-				}));
-			setHeadings(elements);
+					level: Number.parseInt(element.tagName[1]),
+				})),
+			);
 
 			const observer = new IntersectionObserver(
 				(entries) => {
-					entries.forEach((entry) => {
+					for (const entry of entries) {
 						if (entry.isIntersecting) {
 							setActiveId(entry.target.id);
 						}
-					});
+					}
 				},
 				{ rootMargin: "-100px 0% -66%", threshold: 1 },
 			);
 
-			elements.forEach(({ id }) => {
+			for (const { id } of elements) {
 				const element = document.getElementById(id);
 				if (element) observer.observe(element);
-			});
+			}
 
 			return () => observer.disconnect();
 		}, 100);
-	}, [pathname]); // Re-run when route changes
+
+		return () => clearTimeout(timeoutId);
+	}, []); // Removed pathname from dependencies since it's not directly used
 
 	if (headings.length === 0) {
 		return null;
