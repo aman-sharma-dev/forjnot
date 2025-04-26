@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { getDocFromParams } from "@/lib/docs";
-import DOMPurify from "dompurify";
+import DOMPurify from "isomorphic-dompurify";
 
 interface DocsPageProps {
 	params: Promise<{

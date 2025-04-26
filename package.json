@@ -16,6 +16,10 @@
 		"generate:module": "node ./.scripts/generate-module.cli.mjs",
 		"cli:help": "node ./.scripts/base.cli.mjs"
 	},
+	"engines": {
+		"node": "20.x",
+		"pnpm": "8.x"
+	},
 	"lint-staged": {
 		"**/*.{ts,tsx,js,jsx,json,css,md}": [
 			"biome format --write",

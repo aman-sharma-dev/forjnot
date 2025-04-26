@@ -1,5 +1,5 @@
 import { getAllDocs } from "@/lib/docs";
-import DOMPurify from "dompurify";
+import DOMPurify from "isomorphic-dompurify";
 
 export default function DocsPage() {
 	const docs = getAllDocs();
