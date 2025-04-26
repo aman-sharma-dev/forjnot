@@ -2,7 +2,10 @@ import { NestFactory } from "@nestjs/core";
 import { AppModule } from "./app.module";
 import { env } from "@stackbase/shared-env";
 import { DocumentBuilder, SwaggerModule } from "@nestjs/swagger";
-import { ResponseInterceptor } from "@stackbase/shared-utils";
+import {
+	ResponseInterceptor,
+	CheckDependencies,
+} from "@stackbase/shared-utils";
 import { type ILogger, LOGGER_TOKEN } from "@stackbase/shared-logger";
 
 async function bootstrap(): Promise<void> {
@@ -14,6 +17,7 @@ async function bootstrap(): Promise<void> {
 	app.useLogger(logger);
 
 	if (env.RUNTIME_MODE === "local") {
+		await CheckDependencies(app);
 		const config = new DocumentBuilder()
 			.setTitle("Stackbase API")
 			.setDescription("The backend API for the Stackbase monorepo")
@@ -22,9 +26,9 @@ async function bootstrap(): Promise<void> {
 
 		const document = SwaggerModule.createDocument(app, config);
 		SwaggerModule.setup("docs", app, document);
-		logger.log("Swagger UI available at /docs (local only)");
+		logger.log("Swagger UI available at /docs (local only)", "Bootstrap");
 	} else {
-		logger.log("Swagger UI is not enabled in this environment");
+		logger.log("Swagger UI is not enabled in this environment", "Bootstrap");
 	}
 
 	app.useGlobalInterceptors(new ResponseInterceptor());
@@ -32,7 +36,7 @@ async function bootstrap(): Promise<void> {
 
 	const port = env.PORT_BACKEND;
 	await app.listen(port);
-	logger.log(`🚀 Server is running at http://localhost:${String(port)}`);
+	logger.log(`Server is running at http://localhost:${port}`, "Bootstrap");
 }
 
 void bootstrap().catch((error: unknown) => {

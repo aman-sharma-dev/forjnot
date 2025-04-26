@@ -1,5 +1,8 @@
 {
+	"extends": "../../tsconfig.base.json",
 	"compilerOptions": {
+		"baseUrl": ".",
+		"types": ["@types/react"],
 		"target": "ES2017",
 		"lib": ["dom", "dom.iterable", "esnext"],
 		"allowJs": true,
@@ -19,9 +22,28 @@
 			}
 		],
 		"paths": {
-			"@/*": ["./src/*"]
+			"@/*": ["./src/*"],
+			"@stackbase/shared-env": ["../../packages/shared-env/src"],
+			"@stackbase/shared-config": ["../../packages/shared-configs/src"],
+			"@stackbase/shared-dto": ["../../packages/shared-dtos/src"],
+			"@stackbase/shared-utils": ["../../packages/shared-utils/src"],
+			"@stackbase/shared-constants": ["../../packages/shared-constants/src"],
+			"@stackbase/shared-types": ["../../packages/shared-types/src"],
+			"@stackbase/shared-logger": ["../../packages/shared-logger/src"]
 		}
 	},
-	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+	"include": [
+		"next-env.d.ts",
+		"**/*.ts",
+		"**/*.tsx",
+		".next/types/**/*.ts",
+		"../../packages/shared-env/**/*",
+		"../../packages/shared-config/**/*",
+		"../../packages/shared-dto/**/*",
+		"../../packages/shared-types/**/*",
+		"../../packages/shared-constants/**/*",
+		"../../packages/shared-utils/**/*",
+		"../../packages/shared-logger/**/*"
+	],
 	"exclude": ["node_modules"]
 }

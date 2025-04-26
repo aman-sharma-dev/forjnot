@@ -2,10 +2,11 @@
 	"name": "stackbase",
 	"version": "1.0.0",
 	"packageManager": "pnpm@8.15.5",
-	"description": "",
+	"description": "full stack template",
 	"main": "index.js",
 	"scripts": {
 		"server": "pnpm --filter backend dev",
+		"client": "pnpm --filter frontend dev",
 		"build:all": "turbo run build",
 		"dev": "turbo run dev",
 		"lint": "biome lint .",
@@ -16,11 +17,7 @@
 		"cli:help": "node ./.scripts/base.cli.mjs"
 	},
 	"lint-staged": {
-		"**/*.{ts,tsx,js,jsx,json,css,md}": [
-			"biome format --write",
-			"biome lint --write",
-			"git add"
-		]
+		"**/*.{ts,tsx,js,jsx,json,css,md}": ["biome format --write"]
 	},
 	"keywords": [],
 	"author": "",
@@ -30,6 +27,7 @@
 		"@types/node": "^22.10.7",
 		"husky": "^9.1.7",
 		"lint-staged": "^15.5.1",
+		"rimraf": "^6.0.1",
 		"tsconfig-paths": "^4.2.0",
 		"turbo": "^2.5.0",
 		"typescript": "^5.7.3"

@@ -71,6 +71,15 @@ export class ${capitalize(moduleName)}Module {}
 const capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1);
 
 (async () => {
-  const { moduleName, selectedFolders } = await promptUser();
-  generateModule(moduleName, selectedFolders);
+  try {
+    const { moduleName, selectedFolders } = await promptUser();
+    generateModule(moduleName, selectedFolders);
+  } catch (err) {
+    // Handle Ctrl+C (ExitPromptError from inquirer)
+    if (err && (err.name === 'ExitPromptError' || err.message?.includes('User force closed'))) {
+      console.log('\nExiting CLI. Goodbye!');
+      process.exit(0);
+    }
+    throw err;
+  }
 })();

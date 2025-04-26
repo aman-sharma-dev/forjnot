@@ -2,6 +2,7 @@
 	"files": [],
 	"references": [
 		{ "path": "apps/backend" },
+		{ "path": "apps/frontend" },
 		{ "path": "packages/shared-configs" },
 		{ "path": "packages/shared-constants" },
 		{ "path": "packages/shared-dtos" },

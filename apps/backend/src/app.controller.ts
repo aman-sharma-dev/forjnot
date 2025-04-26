@@ -1,6 +1,6 @@
 import { Controller, Get } from "@nestjs/common";
-import type { AppService } from "./app.service";
-import type { HealthCheckResult } from "@nestjs/terminus";
+import { AppService } from "./app.service";
+import { type HealthCheckResult } from "@nestjs/terminus";
 import { DEFAULT_HELLO_RESPONSE } from "@stackbase/shared-constants";
 
 @Controller()

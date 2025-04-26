@@ -6,7 +6,7 @@ import { BaseConfigModule } from "@stackbase/shared-config";
 import { LoggerModule } from "@stackbase/shared-logger";
 
 @Module({
-	imports: [BaseConfigModule, LoggerModule.register(), TerminusModule],
+	imports: [BaseConfigModule, LoggerModule, TerminusModule],
 	controllers: [AppController],
 	providers: [AppService],
 })

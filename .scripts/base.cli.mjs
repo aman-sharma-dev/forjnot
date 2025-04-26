@@ -123,5 +123,17 @@ program.parse(process.argv);
 
 // If no command is passed, show interactive menu
 if (!process.argv.slice(2).length) {
-  mainMenu();
+  // Handle Ctrl+C gracefully during inquirer prompts
+  (async () => {
+    try {
+      await mainMenu();
+    } catch (err) {
+      if (err && err.name === 'ExitPromptError') {
+        console.log('\nExiting CLI. Goodbye!');
+        process.exit(0);
+      }
+      // Re-throw if it's not an ExitPromptError
+      throw err;
+    }
+  })();
 }
