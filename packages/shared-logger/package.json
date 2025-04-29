@@ -1,0 +1,21 @@
+{
+	"name": "@stackbase/shared-logger",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "tsc --project tsconfig.json --outDir dist"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"typescript": "^5.7.3"
+	},
+	"dependencies": {
+		"@nestjs/common": "^11.0.1",
+		"nestjs-pino": "^4.4.0",
+		"pino": "^9.6.0",
+		"pino-pretty": "^13.0.0"
+	}
+}

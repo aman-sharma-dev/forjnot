@@ -1,0 +1,16 @@
+{
+	"name": "@stackbase/shared-configs",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "tsc --project tsconfig.json --outDir dist"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@nestjs/common": "^11.0.1",
+		"@nestjs/config": "^4.0.2"
+	}
+}

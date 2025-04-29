@@ -1,0 +1,43 @@
+{
+	"extends": "../../tsconfig.base.json",
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@stackbase/shared-env": ["../../packages/shared-env/src"],
+			"@stackbase/shared-config": ["../../packages/shared-configs/src"],
+			"@stackbase/shared-dto": ["../../packages/shared-dtos/src"],
+			"@stackbase/shared-utils": ["../../packages/shared-utils/src"],
+			"@stackbase/shared-constants": ["../../packages/shared-constants/src"],
+			"@stackbase/shared-types": ["../../packages/shared-types/src"],
+			"@stackbase/shared-logger": ["../../packages/shared-logger/src"]
+		},
+		"module": "commonjs",
+		"types": ["jest"],
+		"declaration": true,
+		"removeComments": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"allowSyntheticDefaultImports": true,
+		"target": "ES2023",
+		"sourceMap": true,
+		"outDir": "./dist",
+		"incremental": true,
+		"skipLibCheck": true,
+		"strictNullChecks": true,
+		"forceConsistentCasingInFileNames": true,
+		"noImplicitAny": false,
+		"strictBindCallApply": false,
+		"noFallthroughCasesInSwitch": false
+	},
+	"include": [
+		"src/**/*",
+		"../../packages/shared-env/**/*",
+		"../../packages/shared-config/**/*",
+		"../../packages/shared-dto/**/*",
+		"../../packages/shared-types/**/*",
+		"../../packages/shared-constants/**/*",
+		"../../packages/shared-utils/**/*",
+		"../../packages/shared-logger/**/*"
+	],
+	"exclude": ["node_modules", "dist"]
+}

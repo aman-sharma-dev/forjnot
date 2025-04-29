@@ -1,0 +1,24 @@
+{
+	"compilerOptions": {
+		"target": "ES2020",
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"esModuleInterop": true,
+		"strict": true,
+		"skipLibCheck": true,
+		"resolveJsonModule": true,
+		"types": ["node"],
+		"baseUrl": ".",
+		"paths": {
+			"@shared-configs/*": ["packages/shared-configs/src/*"],
+			"@shared-constants/*": ["packages/shared-constants/src/*"],
+			"@shared-dtos/*": ["packages/shared-dtos/src/*"],
+			"@shared-env/*": ["packages/shared-env/src/*"],
+			"@shared-logger/*": ["packages/shared-logger/src/*"],
+			"@shared-types/*": ["packages/shared-types/src/*"],
+			"@shared-utils/*": ["packages/shared-utils/src/*"]
+		}
+	}
+}
