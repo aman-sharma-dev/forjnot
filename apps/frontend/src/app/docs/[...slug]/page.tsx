@@ -19,6 +19,30 @@ export async function generateStaticParams() {
 	];
 }
 
+export async function generateMetadata({ params }: Readonly<DocsPageProps>) {
+	const resolvedParams = await params;
+	const slugPath = resolvedParams.slug?.length
+		? resolvedParams.slug.join("/")
+		: "getting-started";
+	const doc = getDocFromParams(slugPath);
+
+	if (!doc) {
+		notFound();
+	}
+	return {
+		title: `Stackbase | ${doc.title}`,
+		description: doc.description,
+		openGraph: {
+			title: `Stackbase | ${doc.title}`,
+			description: doc.description,
+		},
+		twitter: {
+			title: `Stackbase | ${doc.title}`,
+			description: doc.description,
+		}
+	};
+}
+
 export default async function DocsPage({ params }: Readonly<DocsPageProps>) {
 	const resolvedParams = await params;
 	const slugPath = resolvedParams.slug?.length

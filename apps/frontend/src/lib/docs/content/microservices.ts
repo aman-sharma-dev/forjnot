@@ -70,13 +70,18 @@ export const microservices: Doc = {
         The template is designed to scale as your needs grow—add as many microservices as you want, and keep your codebase organized and maintainable.
       </p>
 
-      <h2 class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight mt-10" id="pro-feature-microservice">💡 Want a Custom Microservice Embedded?</h2>
-      <p class="leading-7">
-        If you’d like to have a microservice tailored and integrated directly into your Stackbase monorepo, I offer a premium service to help you do just that. You’ll get a production-ready microservice, fully wired up and following best practices—saving you time and effort.
-      </p>
-      <p class="leading-7">
-        <strong>Interested?</strong> Reach out to me, and I’ll help you get your custom microservice up and running in your monorepo!
-      </p>
+      <h2 class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight mt-10" id="pro-feature-microservice">🧩 Need a Custom Microservice Setup?</h2>
+If you’re building something unique and want to integrate a microservice beyond what’s included, feel free to reach out. While Stackbase is opinionated, it’s also flexible — and I’m happy to help guide you through adding support for popular backends I’ve worked with (like Node.js/NestJS, Python/FastAPI/Flask).
+
+Want to collaborate or need a tailored setup?
+<a 
+class="inline-flex items-center text-sm font-semibold relative bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent transition-all duration-300 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:bg-gradient-to-r after:from-blue-500 after:via-purple-500 after:to-pink-500 after:transition-all after:duration-300 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-500 dark:via-purple-500 dark:to-pink-500"
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=amansharma42211@gmail.com&su=Custom%20Microservice%20Support%20Request&body=Hi%20Aman%2C%0AI%20would%20like%20some%20help%20with%20adding%20a%20custom%20microservice%20to%20Stackbase.%20Here%20are%20the%20details%3A"
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  Email me
+</a>
     </div>
   `,
 	lastUpdated: new Date().toISOString(),

@@ -41,12 +41,12 @@ export const gettingStarted: Doc = {
         <button
           type="button"
           class="absolute top-2 right-2 z-10 inline-flex items-center rounded bg-muted px-2 py-1 text-xs font-medium text-muted-foreground hover:bg-accent transition"
-          onclick="navigator.clipboard.writeText('pnpm server')"
+          onclick="navigator.clipboard.writeText('pnpm run server')"
           aria-label="Copy"
         >
           Copy
         </button>
-        <pre class="overflow-x-auto rounded border bg-background p-4 text-sm font-mono"><code>pnpm server</code></pre>
+        <pre class="overflow-x-auto rounded border bg-background p-4 text-sm font-mono"><code>pnpm run server</code></pre>
       </div>
 
       <h2 class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight mt-10" id="start-frontend">💻 Start the Frontend</h2>
@@ -54,12 +54,12 @@ export const gettingStarted: Doc = {
         <button
           type="button"
           class="absolute top-2 right-2 z-10 inline-flex items-center rounded bg-muted px-2 py-1 text-xs font-medium text-muted-foreground hover:bg-accent transition"
-          onclick="navigator.clipboard.writeText('pnpm client')"
+          onclick="navigator.clipboard.writeText('pnpm run client')"
           aria-label="Copy"
         >
           Copy
         </button>
-        <pre class="overflow-x-auto rounded border bg-background p-4 text-sm font-mono"><code>pnpm client</code></pre>
+        <pre class="overflow-x-auto rounded border bg-background p-4 text-sm font-mono"><code>pnpm run client</code></pre>
       </div>
 
       <h2 class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight mt-10" id="tips">💡 Tips</h2>

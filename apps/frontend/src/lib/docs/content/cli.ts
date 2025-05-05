@@ -31,13 +31,27 @@ export const cliDoc: Doc = {
     <p>When you run this command, you’ll see something like the following interactive menu:</p>
 
     <div class="relative my-4">
-      <pre class="overflow-x-auto rounded border bg-background p-4 text-sm font-mono"><code>Available Commands:
+      <pre class="overflow-x-auto rounded border bg-background p-4 text-sm font-mono"><code>
+███████╗████████╗ █████╗  ██████╗██╗  ██╗██████╗  █████╗ ███████╗███████╗
+██╔════╝╚══██╔══╝██╔══██╗██╔════╝██║ ██╔╝██╔══██╗██╔══██╗██╔════╝██╔════╝
+███████╗   ██║   ███████║██║     █████╔╝ ██████╔╝███████║███████╗█████╗
+╚════██║   ██║   ██╔══██║██║     ██╔═██╗ ██╔══██╗██╔══██║╚════██║██╔══╝
+███████║   ██║   ██║  ██║╚██████╗██║  ██╗██████╔╝██║  ██║███████║███████╗
+╚══════╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝╚══════╝╚══════╝
+
+Available Commands:
 1. Build the project: pnpm run build:all
-2. Start the server: pnpm run server
-3. Generate a new module: pnpm run generate:module
+2. Start the client: pnpm run client
+3. Start the server: pnpm run server
+4. Lint the code: pnpm run lint
+5. Format the code: pnpm run format
+6. Generate a new module: pnpm run generate:module
 ? Select an action: (Use arrow keys)
-&gt; Build the project
+❯ Build the project
+  Start the client
   Start the server
+  Lint the code
+  Format the code
   Generate a new module
 </code></pre>
     </div>

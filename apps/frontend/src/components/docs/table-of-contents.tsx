@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { cn } from "../../lib/utils";
+import { usePathname } from "next/navigation";
 
 interface Heading {
 	id: string;
@@ -12,6 +13,7 @@ interface Heading {
 export function TableOfContents() {
 	const [headings, setHeadings] = useState<Heading[]>([]);
 	const [activeId, setActiveId] = useState<string>("");
+	const pathname = usePathname(); // <-- Add this line
 
 	useEffect(() => {
 		// Reset states when route changes
@@ -47,7 +49,7 @@ export function TableOfContents() {
 		}, 100);
 
 		return () => clearTimeout(timeoutId);
-	}, []); // Removed pathname from dependencies since it's not directly used
+	}, [pathname]); // <-- Add pathname as a dependency
 
 	if (headings.length === 0) {
 		return null;

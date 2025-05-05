@@ -10,51 +10,22 @@ export const lintingAndFormatting: Doc = {
     <h2 class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight">Linting & Formatting</h2>
 
     <p>
-      Stackbase uses <strong><a href="https://biomejs.dev/" target="_blank" rel="noopener noreferrer">Biome.js</a></strong> as the default tool for both linting and code formatting.
-      It’s fast, zero-dependency, and works out-of-the-box without needing to maintain a bunch of plugins or config files.
+      Stackbase uses <strong><a href="https://biomejs.dev/" target="_blank" rel="noopener noreferrer">Biome.js</a></strong> for both linting and formatting. 
+      It’s a modern, fast, and zero-dependency tool — no need for separate ESLint or Prettier setups.
     </p>
 
     <h3 class="mt-6 scroll-m-20 text-2xl font-semibold tracking-tight">✨ Why Biome?</h3>
     <ul>
-      <li>No ESLint or Prettier setup required</li>
-      <li>Fast execution, written in Rust</li>
-      <li>Supports modern JavaScript, TypeScript, JSX, and more</li>
-      <li>Great developer experience with built-in formatting and diagnostics</li>
+      <li>One tool for linting and formatting</li>
+      <li>Written in Rust — incredibly fast</li>
+      <li>Supports JavaScript, TypeScript, JSX, and more</li>
+      <li>Includes sensible defaults for modern projects</li>
     </ul>
 
-    <h3 class="mt-6 scroll-m-20 text-2xl font-semibold tracking-tight">🚀 Run Lint & Format</h3>
-
-    <p>To lint and format your codebase, just run:</p>
-    <div class="relative my-4">
-      <button
-        type="button"
-        class="absolute top-2 right-2 z-10 inline-flex items-center rounded bg-muted px-2 py-1 text-xs font-medium text-muted-foreground hover:bg-accent transition"
-        onclick="navigator.clipboard.writeText('pnpm lint')"
-        aria-label="Copy"
-      >
-        Copy
-      </button>
-      <pre class="overflow-x-auto rounded border bg-background p-4 text-sm font-mono"><code>pnpm lint</code></pre>
-    </div>
-
-    <p>You can also format all files directly using:</p>
-    <div class="relative my-4">
-      <button
-        type="button"
-        class="absolute top-2 right-2 z-10 inline-flex items-center rounded bg-muted px-2 py-1 text-xs font-medium text-muted-foreground hover:bg-accent transition"
-        onclick="navigator.clipboard.writeText('pnpm format')"
-        aria-label="Copy"
-      >
-        Copy
-      </button>
-      <pre class="overflow-x-auto rounded border bg-background p-4 text-sm font-mono"><code>pnpm format</code></pre>
-    </div>
-
-    <h3 class="mt-6 scroll-m-20 text-2xl font-semibold tracking-tight">⚙️ Custom Rules?</h3>
+    <h3 class="mt-6 scroll-m-20 text-2xl font-semibold tracking-tight">📦 Pre-configured Setup</h3>
     <p>
-      By default, Stackbase does not include any <code>biome.json</code> config file to keep things minimal. 
-      But if you'd like to customize rules or override defaults (e.g. change quote style, enable/disable specific lints), 
-      you can add your own config at the root:
+      Stackbase includes a default <code>biome.json</code> configuration at the root of the repo. This means linting and formatting work out-of-the-box with no additional setup.
+      You can customize rules, formatting style, or enable/disable specific lints as needed.
     </p>
 
     <div class="relative my-4">
@@ -76,12 +47,40 @@ export const lintingAndFormatting: Doc = {
 </code></pre>
     </div>
 
+    <h3 class="mt-6 scroll-m-20 text-2xl font-semibold tracking-tight">🚀 Run Lint & Format</h3>
+    <p>To check for lint issues or auto-format your codebase, use the following commands:</p>
+
+    <div class="relative my-4">
+      <button
+        type="button"
+        class="absolute top-2 right-2 z-10 inline-flex items-center rounded bg-muted px-2 py-1 text-xs font-medium text-muted-foreground hover:bg-accent transition"
+        onclick="navigator.clipboard.writeText('pnpm lint')"
+        aria-label="Copy"
+      >
+        Copy
+      </button>
+      <pre class="overflow-x-auto rounded border bg-background p-4 text-sm font-mono"><code>pnpm lint</code></pre>
+    </div>
+
+    <p>To format all project files:</p>
+    <div class="relative my-4">
+      <button
+        type="button"
+        class="absolute top-2 right-2 z-10 inline-flex items-center rounded bg-muted px-2 py-1 text-xs font-medium text-muted-foreground hover:bg-accent transition"
+        onclick="navigator.clipboard.writeText('pnpm format')"
+        aria-label="Copy"
+      >
+        Copy
+      </button>
+      <pre class="overflow-x-auto rounded border bg-background p-4 text-sm font-mono"><code>pnpm format</code></pre>
+    </div>
+
     <p>
-      You can find the full config reference in the 
-      <a href="https://biomejs.dev/docs" target="_blank" rel="noopener noreferrer">Biome docs</a>.
+      For full customization options and rule references, check out the 
+      <a href="https://biomejs.dev/docs" target="_blank" rel="noopener noreferrer">Biome documentation</a>.
     </p>
 
-    <p class="mt-6">Enjoy fast and consistent code formatting with zero hassle 🚀</p>
+    <p class="mt-6">Enjoy fast, consistent, and fully-configurable code quality out-of-the-box 🚀</p>
   </div>
-  `,
+`,
 };
