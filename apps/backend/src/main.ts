@@ -2,10 +2,7 @@ import { NestFactory } from "@nestjs/core";
 import { AppModule } from "./app.module";
 import { env } from "@forjnot/shared-env";
 import { DocumentBuilder, SwaggerModule } from "@nestjs/swagger";
-import {
-	ResponseInterceptor,
-	CheckDependencies,
-} from "@forjnot/shared-utils";
+import { ResponseInterceptor, CheckDependencies } from "@forjnot/shared-utils";
 import { type ILogger, LOGGER_TOKEN } from "@forjnot/shared-logger";
 
 async function bootstrap(): Promise<void> {

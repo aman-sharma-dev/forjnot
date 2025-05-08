@@ -17,8 +17,7 @@ const config: Config = {
 	moduleNameMapper: {
 		"^@forjnot/shared-config$":
 			"<rootDir>/../../../packages/shared-configs/src",
-		"^@forjnot/shared-logger$":
-			"<rootDir>/../../../packages/shared-logger/src",
+		"^@forjnot/shared-logger$": "<rootDir>/../../../packages/shared-logger/src",
 		"^@forjnot/shared-constants$":
 			"<rootDir>/../../../packages/shared-constants/src",
 		"^@forjnot/shared-util$": "<rootDir>/../../../packages/shared-util/src",
