@@ -6,14 +6,14 @@ export async function generateMetadata(): Promise<Metadata> {
 	const docs = getAllDocs();
 	const defaultDoc = docs[0];
 	return {
-		title: `Stackbase | ${defaultDoc.title}`,
+		title: `Forjnot | ${defaultDoc.title}`,
 		description: defaultDoc.description,
 		openGraph: {
-			title: `Stackbase | ${defaultDoc.title}`,
+			title: `Forjnot | ${defaultDoc.title}`,
 			description: defaultDoc.description,
 		},
 		twitter: {
-			title: `Stackbase | ${defaultDoc.title}`,
+			title: `Forjnot | ${defaultDoc.title}`,
 			description: defaultDoc.description,
 		},
 	};

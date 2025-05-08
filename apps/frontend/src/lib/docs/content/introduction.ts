@@ -2,12 +2,12 @@ import { Doc } from "../types";
 
 export const introduction: Doc = {
 	title: "Introduction",
-	description: "Overview of Stackbase and what it offers",
+	description: "Overview of Forjnot and what it offers",
 	content: `
     <div class="prose prose-slate max-w-none">
       <h1 class="scroll-m-20 text-4xl font-bold tracking-tight" id="introduction">🚀 Introduction</h1>
       <p class="leading-7 [&:not(:first-child)]:mt-6">
-        <strong>Stackbase</strong> is a clean, scalable, and professional monorepo template built for developers who want a solid foundation for both backend and frontend apps using modern tooling.
+        <strong>Forjnot</strong> is a clean, scalable, and professional monorepo template built for developers who want a solid foundation for both backend and frontend apps using modern tooling.
       </p>
       <p class="leading-7">
         It aims to eliminate the repetitive setup work and lets you focus on building features right away — while still being highly customizable and production-ready.
@@ -18,7 +18,7 @@ export const introduction: Doc = {
         <button
           type="button"
           class="absolute top-2 right-2 z-10 inline-flex items-center rounded bg-muted px-2 py-1 text-xs font-medium text-muted-foreground hover:bg-accent transition"
-          onclick="navigator.clipboard.writeText(\`stackbase/
+          onclick="navigator.clipboard.writeText(\`forjnot/
 ├── apps/
 │   ├── backend/         # NestJS application
 │   └── frontend/        # Next.js application
@@ -35,7 +35,7 @@ export const introduction: Doc = {
         >
           Copy
         </button>
-        <pre class="overflow-x-auto rounded border bg-background p-4 text-sm font-mono"><code>stackbase/
+        <pre class="overflow-x-auto rounded border bg-background p-4 text-sm font-mono"><code>forjnot/
 ├── apps/
 │   ├── backend/         # NestJS application
 │   └── frontend/        # Next.js application
@@ -137,7 +137,7 @@ export const introduction: Doc = {
         </div>
       </div>
 
-      <h2 class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight mt-10" id="what-is-stackbase">💡 What is Stackbase?</h2>
+      <h2 class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight mt-10" id="what-is-forjnot">💡 What is Forjnot?</h2>
       <ul class="my-6 ml-6 list-disc [&>li]:mt-2">
         <li>Shared packages for configuration, types, DTOs, environment, and utilities.</li>
         <li>NestJS backend with modular architecture and optional CLI module generator.</li>
@@ -148,7 +148,7 @@ export const introduction: Doc = {
         <li>Optional docs branch for public documentation and Vercel deployment.</li>
       </ul>
 
-      <h2 class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight mt-10" id="why-stackbase">🌟 Why Stackbase?</h2>
+      <h2 class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight mt-10" id="why-forjnot">🌟 Why Forjnot?</h2>
       <ul class="my-6 ml-6 list-disc [&>li]:mt-2">
         <li>Skip the boilerplate — common patterns and configs are already done for you.</li>
         <li>Monorepo-first — built with Turborepo to handle multiple apps and packages smoothly.</li>

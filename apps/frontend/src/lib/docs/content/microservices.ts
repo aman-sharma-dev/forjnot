@@ -3,7 +3,7 @@ import { Doc } from "../types";
 export const microservices: Doc = {
 	title: "Microservices",
 	description:
-		"What are microservices, when to use them, their types, and how Stackbase supports scalable microservice architecture.",
+		"What are microservices, when to use them, their types, and how Forjnot supports scalable microservice architecture.",
 	content: `
     <div class="prose prose-slate max-w-none">
       <h1 class="scroll-m-20 text-4xl font-bold tracking-tight" id="microservices-architecture">🧩 Microservices Architecture</h1>
@@ -38,9 +38,9 @@ export const microservices: Doc = {
         <li><strong>Database Services:</strong> Own and manage specific data domains.</li>
       </ul>
 
-      <h2 class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight mt-10" id="stackbase-microservices-support">🚀 Stackbase: Ready for Microservices</h2>
+      <h2 class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight mt-10" id="forjnot-microservices-support">🚀 Forjnot: Ready for Microservices</h2>
       <p class="leading-7">
-        Stackbase is architected to make adding microservices seamless. You can introduce new services (like <code>apps/worker</code>, <code>apps/api-gateway</code>, etc.) right alongside your existing apps. The shared <code>packages/</code> directory lets you reuse types, DTOs, configs, and utilities across all services, making scaling and maintenance a breeze.
+        Forjnot is architected to make adding microservices seamless. You can introduce new services (like <code>apps/worker</code>, <code>apps/api-gateway</code>, etc.) right alongside your existing apps. The shared <code>packages/</code> directory lets you reuse types, DTOs, configs, and utilities across all services, making scaling and maintenance a breeze.
       </p>
       <div class="relative my-6">
         <span class="block mb-2 text-sm font-medium text-muted-foreground">Example: Add a new worker microservice</span>
@@ -71,7 +71,7 @@ export const microservices: Doc = {
       </p>
 
       <h2 class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight mt-10" id="pro-feature-microservice">🧩 Need a Custom Microservice Setup?</h2>
-If you’re building something unique and want to integrate a microservice beyond what’s included, feel free to reach out. While Stackbase is opinionated, it’s also flexible — and I’m happy to help guide you through adding support for popular backends I’ve worked with (like Node.js/NestJS, Python/FastAPI/Flask).
+If you’re building something unique and want to integrate a microservice beyond what’s included, feel free to reach out. While Forjnot is opinionated, it’s also flexible — and I’m happy to help guide you through adding support for popular backends I’ve worked with (like Node.js/NestJS, Python/FastAPI/Flask).
 
 Want to collaborate or need a tailored setup?
 <a 

@@ -1,7 +1,7 @@
 import { Test, type TestingModule } from "@nestjs/testing";
 import { AppController } from "./app.controller";
 import { AppService } from "./app.service";
-import { DEFAULT_HELLO_RESPONSE } from "@stackbase/shared-constants";
+import { DEFAULT_HELLO_RESPONSE } from "@forjnot/shared-constants";
 
 describe("AppController", () => {
 	let appController: AppController;

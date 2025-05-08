@@ -15,7 +15,7 @@ switch (process.env.RUNTIME_MODE) {
 export const config = {
 	environment: process.env.RUNTIME_MODE, // development | production | staging | test | development
 	apiURL,
-	gitHubURL: "https://github.com/aman-sharma-dev/stackbase",
+	gitHubURL: "https://github.com/aman-sharma-dev/forjnot",
 	linkedinURL: "https://www.linkedin.com/in/aman-sharma-2b2671299/",
 };
 

@@ -15,13 +15,13 @@ const config: Config = {
 	coverageReporters: ["text", "lcov"],
 	roots: ["<rootDir>"],
 	moduleNameMapper: {
-		"^@stackbase/shared-config$":
+		"^@forjnot/shared-config$":
 			"<rootDir>/../../../packages/shared-configs/src",
-		"^@stackbase/shared-logger$":
+		"^@forjnot/shared-logger$":
 			"<rootDir>/../../../packages/shared-logger/src",
-		"^@stackbase/shared-constants$":
+		"^@forjnot/shared-constants$":
 			"<rootDir>/../../../packages/shared-constants/src",
-		"^@stackbase/shared-util$": "<rootDir>/../../../packages/shared-util/src",
+		"^@forjnot/shared-util$": "<rootDir>/../../../packages/shared-util/src",
 	},
 };
 

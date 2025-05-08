@@ -30,14 +30,14 @@ export async function generateMetadata({ params }: Readonly<DocsPageProps>) {
 		notFound();
 	}
 	return {
-		title: `Stackbase | ${doc.title}`,
+		title: `Forjnot | ${doc.title}`,
 		description: doc.description,
 		openGraph: {
-			title: `Stackbase | ${doc.title}`,
+			title: `Forjnot | ${doc.title}`,
 			description: doc.description,
 		},
 		twitter: {
-			title: `Stackbase | ${doc.title}`,
+			title: `Forjnot | ${doc.title}`,
 			description: doc.description,
 		}
 	};

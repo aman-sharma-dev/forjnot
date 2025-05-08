@@ -13,7 +13,7 @@ export default function CallToAction() {
 				</h2>
 				<p className="mx-auto mb-8 max-w-xl text-muted-foreground">
 					Join the growing community of developers who are shipping products
-					faster with Stackbase.
+					faster with Forjnot.
 				</p>
 
 				<div className="flex flex-col justify-center gap-4 sm:flex-row">

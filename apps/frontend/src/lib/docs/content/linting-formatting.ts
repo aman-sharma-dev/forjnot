@@ -10,7 +10,7 @@ export const lintingAndFormatting: Doc = {
     <h2 class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight">Linting & Formatting</h2>
 
     <p>
-      Stackbase uses <strong><a href="https://biomejs.dev/" target="_blank" rel="noopener noreferrer">Biome.js</a></strong> for both linting and formatting. 
+      Forjnot uses <strong><a href="https://biomejs.dev/" target="_blank" rel="noopener noreferrer">Biome.js</a></strong> for both linting and formatting. 
       It’s a modern, fast, and zero-dependency tool — no need for separate ESLint or Prettier setups.
     </p>
 
@@ -24,7 +24,7 @@ export const lintingAndFormatting: Doc = {
 
     <h3 class="mt-6 scroll-m-20 text-2xl font-semibold tracking-tight">📦 Pre-configured Setup</h3>
     <p>
-      Stackbase includes a default <code>biome.json</code> configuration at the root of the repo. This means linting and formatting work out-of-the-box with no additional setup.
+      Forjnot includes a default <code>biome.json</code> configuration at the root of the repo. This means linting and formatting work out-of-the-box with no additional setup.
       You can customize rules, formatting style, or enable/disable specific lints as needed.
     </p>
 

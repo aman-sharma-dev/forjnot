@@ -39,7 +39,7 @@ export default function Hero() {
 
 				{/* Description */}
 				<p className="mx-auto mb-10 max-w-2xl text-lg text-muted-foreground md:text-xl">
-					Stackbase gives you a battle-tested monorepo setup with NestJS,
+					Forjnot gives you a battle-tested monorepo setup with NestJS,
 					Next.js, and shared packages – everything you need to move fast.
 				</p>
 

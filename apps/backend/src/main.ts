@@ -1,12 +1,12 @@
 import { NestFactory } from "@nestjs/core";
 import { AppModule } from "./app.module";
-import { env } from "@stackbase/shared-env";
+import { env } from "@forjnot/shared-env";
 import { DocumentBuilder, SwaggerModule } from "@nestjs/swagger";
 import {
 	ResponseInterceptor,
 	CheckDependencies,
-} from "@stackbase/shared-utils";
-import { type ILogger, LOGGER_TOKEN } from "@stackbase/shared-logger";
+} from "@forjnot/shared-utils";
+import { type ILogger, LOGGER_TOKEN } from "@forjnot/shared-logger";
 
 async function bootstrap(): Promise<void> {
 	const app = await NestFactory.create(AppModule, {
@@ -19,8 +19,8 @@ async function bootstrap(): Promise<void> {
 	if (env.RUNTIME_MODE === "local") {
 		await CheckDependencies(app);
 		const config = new DocumentBuilder()
-			.setTitle("Stackbase API")
-			.setDescription("The backend API for the Stackbase monorepo")
+			.setTitle("Forjnot API")
+			.setDescription("The backend API for the Forjnot monorepo")
 			.setVersion("1.0")
 			.build();
 

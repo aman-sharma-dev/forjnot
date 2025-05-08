@@ -10,19 +10,21 @@ import gradient from "gradient-string";
 
 // Print ASCII logo at the top
 const logo = `
-███████╗████████╗ █████╗  ██████╗██╗  ██╗██████╗  █████╗ ███████╗███████╗
-██╔════╝╚══██╔══╝██╔══██╗██╔════╝██║ ██╔╝██╔══██╗██╔══██╗██╔════╝██╔════╝
-███████╗   ██║   ███████║██║     █████╔╝ ██████╔╝███████║███████╗█████╗  
-╚════██║   ██║   ██╔══██║██║     ██╔═██╗ ██╔══██╗██╔══██║╚════██║██╔══╝  
-███████║   ██║   ██║  ██║╚██████╗██║  ██╗██████╔╝██║  ██║███████║███████╗
-╚══════╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝╚══════╝╚══════╝
+
+███████╗ ██████╗ ██████╗      ██╗███╗   ██╗ ██████╗ ████████╗ | / /
+██╔════╝██╔═══██╗██╔══██╗     ██║████╗  ██║██╔═══██╗╚══██╔══╝ |/ /
+█████╗  ██║   ██║██████╔╝     ██║██╔██╗ ██║██║   ██║   ██║    | /
+██╔══╝  ██║   ██║██╔══██╗██   ██║██║╚██╗██║██║   ██║   ██║    |/
+██║     ╚██████╔╝██║  ██║╚█████╔╝██║ ╚████║╚██████╔╝   ██║    |
+╚═╝      ╚═════╝ ╚═╝  ╚═╝ ╚════╝ ╚═╝  ╚═══╝ ╚═════╝    ╚═╝    |
+
 `;
 console.log(gradient.mind(logo));
 // Initialize the CLI program
 const program = new Command();
 
 // Add global options
-program.version("1.0.0").description("CLI for managing your Stackbase project");
+program.version("1.0.0").description("CLI for managing your Forjnot project");
 
 // Function to execute shell commands using spawn
 const runCommand = (command, args = []) => {

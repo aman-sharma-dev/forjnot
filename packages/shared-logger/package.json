@@ -1,5 +1,5 @@
 {
-	"name": "@stackbase/shared-logger",
+	"name": "@forjnot/shared-logger",
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",

@@ -12,9 +12,9 @@
 
 ---
 
-## 🚀 Why Stackbase?
+## 🚀 Why Forjnot?
 
-**Stackbase** is for serious developers who want to:
+**Forjnot** is for serious developers who want to:
 
 - Quickly start a monorepo project with precision.
 - Use **NestJS** for the backend (modular, scalable).
@@ -109,12 +109,12 @@ This project is licensed under the MIT License — feel free to use and modify i
 
 🤝 Contributing
 Open to contributions — bug fixes, improvements, or new ideas.
-Stackbase is already powerful, but there’s always room for growth.
+Forjnot is already powerful, but there’s always room for growth.
 Feel free to explore and help shape it further.
 
 🧭 Final Words
-Stackbase isn’t bloated, it’s not overdone, and it’s not meant to impress.
+Forjnot isn’t bloated, it’s not overdone, and it’s not meant to impress.
 It’s built to scale hard, start clean, and grow fast — just like real teams need.
 
 Use it. Fork it. Break it. Improve it.
-Stackbase is your foundation.
+Forjnot is your foundation.

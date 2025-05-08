@@ -23,13 +23,13 @@
 		],
 		"paths": {
 			"@/*": ["./src/*"],
-			"@stackbase/shared-env": ["../../packages/shared-env/src"],
-			"@stackbase/shared-config": ["../../packages/shared-configs/src"],
-			"@stackbase/shared-dto": ["../../packages/shared-dtos/src"],
-			"@stackbase/shared-utils": ["../../packages/shared-utils/src"],
-			"@stackbase/shared-constants": ["../../packages/shared-constants/src"],
-			"@stackbase/shared-types": ["../../packages/shared-types/src"],
-			"@stackbase/shared-logger": ["../../packages/shared-logger/src"]
+			"@forjnot/shared-env": ["../../packages/shared-env/src"],
+			"@forjnot/shared-config": ["../../packages/shared-configs/src"],
+			"@forjnot/shared-dto": ["../../packages/shared-dtos/src"],
+			"@forjnot/shared-utils": ["../../packages/shared-utils/src"],
+			"@forjnot/shared-constants": ["../../packages/shared-constants/src"],
+			"@forjnot/shared-types": ["../../packages/shared-types/src"],
+			"@forjnot/shared-logger": ["../../packages/shared-logger/src"]
 		}
 	},
 	"include": [

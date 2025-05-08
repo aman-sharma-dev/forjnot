@@ -2,14 +2,14 @@ import { Doc } from "../types";
 
 export const cliDoc: Doc = {
 	title: "CLI Tool",
-	description: "Use the built-in Stackbase CLI to streamline development",
+	description: "Use the built-in Forjnot CLI to streamline development",
 	slug: "cli",
 	lastUpdated: new Date().toISOString(),
 	content: `
   <div class="prose prose-slate max-w-none">
-    <h2 class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight">Stackbase CLI</h2>
+    <h2 class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight">Forjnot CLI</h2>
     <p>
-      Stackbase includes a built-in CLI to help you generate modules and manage core tasks faster.
+      Forjnot includes a built-in CLI to help you generate modules and manage core tasks faster.
       This tool provides an interactive prompt and wraps common scripts into a handy developer menu.
     </p>
 
@@ -32,12 +32,13 @@ export const cliDoc: Doc = {
 
     <div class="relative my-4">
       <pre class="overflow-x-auto rounded border bg-background p-4 text-sm font-mono"><code>
-███████╗████████╗ █████╗  ██████╗██╗  ██╗██████╗  █████╗ ███████╗███████╗
-██╔════╝╚══██╔══╝██╔══██╗██╔════╝██║ ██╔╝██╔══██╗██╔══██╗██╔════╝██╔════╝
-███████╗   ██║   ███████║██║     █████╔╝ ██████╔╝███████║███████╗█████╗
-╚════██║   ██║   ██╔══██║██║     ██╔═██╗ ██╔══██╗██╔══██║╚════██║██╔══╝
-███████║   ██║   ██║  ██║╚██████╗██║  ██╗██████╔╝██║  ██║███████║███████╗
-╚══════╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝╚══════╝╚══════╝
+
+      ███████╗ ██████╗ ██████╗      ██╗███╗   ██╗ ██████╗ ████████╗ | / /
+      ██╔════╝██╔═══██╗██╔══██╗     ██║████╗  ██║██╔═══██╗╚══██╔══╝ |/ /
+      █████╗  ██║   ██║██████╔╝     ██║██╔██╗ ██║██║   ██║   ██║    | /
+      ██╔══╝  ██║   ██║██╔══██╗██   ██║██║╚██╗██║██║   ██║   ██║    |/
+      ██║     ╚██████╔╝██║  ██║╚█████╔╝██║ ╚████║╚██████╔╝   ██║    |
+      ╚═╝      ╚═════╝ ╚═╝  ╚═╝ ╚════╝ ╚═╝  ╚═══╝ ╚═════╝    ╚═╝    |      
 
 Available Commands:
 1. Build the project: pnpm run build:all
@@ -63,7 +64,7 @@ Available Commands:
 
     <h3 class="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">🧹 Don't need the CLI?</h3>
     <p>If you don’t plan to use the CLI, feel free to delete the <code>.scripts/</code> folder from the project root. 
-    It’s fully optional and won’t affect the core functionality of Stackbase.</p>
+    It’s fully optional and won’t affect the core functionality of Forjnot.</p>
   </div>
   `,
 };

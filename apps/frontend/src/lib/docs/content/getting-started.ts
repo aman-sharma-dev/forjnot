@@ -2,12 +2,12 @@ import { Doc } from "../types";
 
 export const gettingStarted: Doc = {
 	title: "Getting Started",
-	description: "Learn how to get started with Stackbase",
+	description: "Learn how to get started with Forjnot",
 	content: `
     <div class="prose prose-slate max-w-none">
       <h1 class="scroll-m-20 text-4xl font-bold tracking-tight" id="getting-started">🚦 Getting Started</h1>
       <p class="leading-7 [&:not(:first-child)]:mt-6">
-        Follow these steps to get up and running with Stackbase in minutes!
+        Follow these steps to get up and running with Forjnot in minutes!
       </p>
 
       <h2 class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight mt-10" id="clone-repo">📥 Clone the Repository</h2>
@@ -15,12 +15,12 @@ export const gettingStarted: Doc = {
         <button
           type="button"
           class="absolute top-2 right-2 z-10 inline-flex items-center rounded bg-muted px-2 py-1 text-xs font-medium text-muted-foreground hover:bg-accent transition"
-          onclick="navigator.clipboard.writeText('git clone https://github.com/aman-sharma-dev/stackbase.git')"
+          onclick="navigator.clipboard.writeText('git clone https://github.com/aman-sharma-dev/forjnot.git')"
           aria-label="Copy"
         >
           Copy
         </button>
-        <pre class="overflow-x-auto rounded border bg-background p-4 text-sm font-mono"><code>git clone https://github.com/aman-sharma-dev/stackbase.git</code></pre>
+        <pre class="overflow-x-auto rounded border bg-background p-4 text-sm font-mono"><code>git clone https://github.com/aman-sharma-dev/forjnot.git</code></pre>
       </div>
 
       <h2 class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight mt-10" id="install-deps">📦 Install Dependencies</h2>

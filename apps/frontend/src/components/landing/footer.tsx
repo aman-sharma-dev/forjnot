@@ -15,11 +15,11 @@ export default function Footer() {
 				<div className="flex flex-col items-center justify-between gap-4 md:flex-row">
 					<div className="flex items-center">
 						<img
-							src="/stackbase-logo.png"
+							src="/forjnot.png"
 							alt="logo"
-							className="w-8 h-8 object-contain mr-2"
+							className="w-10 h-10 object-contain mr-2"
 						/>
-						<span className="text-xl font-bold">Stackbase</span>
+						<span className="text-xl font-bold">Forjnot</span>
 					</div>
 
 					<div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
@@ -36,7 +36,7 @@ export default function Footer() {
 					</div>
 
 					<div className="text-sm text-muted-foreground">
-						&copy; {new Date().getFullYear()} Stackbase
+						&copy; {new Date().getFullYear()} Forjnot
 					</div>
 				</div>
 			</div>

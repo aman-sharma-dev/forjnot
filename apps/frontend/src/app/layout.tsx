@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 	authors: {
 		name: "Aman Sharma",
 	},
-	title: "Stackbase - Home",
+	title: "Forjnot - Home",
 	description: "A simple and clean starting point for your next project",
 };
 

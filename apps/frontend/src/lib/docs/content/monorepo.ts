@@ -3,12 +3,12 @@ import { Doc } from "../types";
 export const monorepo: Doc = {
 	title: "Monorepo Architecture",
 	description:
-		"Why and when to use a monorepo, and the advantages of Stackbase's structure",
+		"Why and when to use a monorepo, and the advantages of Forjnot's structure",
 	content: `
     <div class="prose prose-slate max-w-none">
       <h1 class="scroll-m-20 text-4xl font-bold tracking-tight" id="monorepo-architecture">🗂️ Monorepo Architecture</h1>
       <p class="leading-7 [&:not(:first-child)]:mt-6">
-        A <strong>monorepo</strong> (monolithic repository) is a single repository that holds the code and assets for multiple projects, apps, or packages. Stackbase is designed as a monorepo to help you scale, share code, and manage dependencies efficiently.
+        A <strong>monorepo</strong> (monolithic repository) is a single repository that holds the code and assets for multiple projects, apps, or packages. Forjnot is designed as a monorepo to help you scale, share code, and manage dependencies efficiently.
       </p>
 
       <h2 class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight mt-10" id="when-to-use-monorepo">🚦 When Should You Use a Monorepo?</h2>
@@ -31,7 +31,7 @@ export const monorepo: Doc = {
         <li><strong>Scalability:</strong> Add new apps or packages as your project grows, without restructuring.</li>
       </ul>
 
-      <h2 class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight mt-10" id="stackbase-monorepo-highlights">🚀 Extreme Positives of Stackbase's Monorepo</h2>
+      <h2 class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight mt-10" id="forjnot-monorepo-highlights">🚀 Extreme Positives of Forjnot's Monorepo</h2>
       <ul class="my-6 ml-6 list-disc [&>li]:mt-2">
         <li><strong>Modern Tooling:</strong> Uses Turborepo for blazing-fast builds and caching.</li>
         <li><strong>Shared Everything:</strong> Configs, types, DTOs, environment, logger, and utilities are all reusable.</li>
@@ -47,7 +47,7 @@ export const monorepo: Doc = {
         <button
           type="button"
           class="absolute top-2 right-2 z-10 inline-flex items-center rounded bg-muted px-2 py-1 text-xs font-medium text-muted-foreground hover:bg-accent transition"
-          onclick="navigator.clipboard.writeText(\`stackbase/
+          onclick="navigator.clipboard.writeText(\`forjnot/
 ├── apps/
 │   ├── backend/         # NestJS application
 │   └── frontend/        # Next.js application
@@ -64,7 +64,7 @@ export const monorepo: Doc = {
         >
           Copy
         </button>
-        <pre class="overflow-x-auto rounded border bg-background p-4 text-sm font-mono"><code>stackbase/
+        <pre class="overflow-x-auto rounded border bg-background p-4 text-sm font-mono"><code>forjnot/
 ├── apps/
 │   ├── backend/         # NestJS application
 │   └── frontend/        # Next.js application
@@ -81,16 +81,16 @@ export const monorepo: Doc = {
 
       <h2 class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight mt-10" id="monorepo-init-command">🛠️ Initialize Your Own Monorepo</h2>
       <div class="relative my-4">
-        <span class="block mb-2 text-sm font-medium text-muted-foreground">Clone the Stackbase monorepo template:</span>
+        <span class="block mb-2 text-sm font-medium text-muted-foreground">Clone the Forjnot monorepo template:</span>
         <button
           type="button"
           class="absolute top-2 right-2 z-10 inline-flex items-center rounded bg-muted px-2 py-1 text-xs font-medium text-muted-foreground hover:bg-accent transition"
-          onclick="navigator.clipboard.writeText('git clone https://github.com/your-org/stackbase.git')"
+          onclick="navigator.clipboard.writeText('git clone https://github.com/your-org/forjnot.git')"
           aria-label="Copy"
         >
           Copy
         </button>
-        <pre class="overflow-x-auto rounded border bg-background p-4 text-sm font-mono"><code>git clone https://github.com/your-org/stackbase.git</code></pre>
+        <pre class="overflow-x-auto rounded border bg-background p-4 text-sm font-mono"><code>git clone https://github.com/your-org/forjnot.git</code></pre>
       </div>
     </div>
   `,
