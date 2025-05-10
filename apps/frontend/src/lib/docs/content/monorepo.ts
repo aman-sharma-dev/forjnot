@@ -85,12 +85,12 @@ export const monorepo: Doc = {
         <button
           type="button"
           class="absolute top-2 right-2 z-10 inline-flex items-center rounded bg-muted px-2 py-1 text-xs font-medium text-muted-foreground hover:bg-accent transition"
-          onclick="navigator.clipboard.writeText('git clone https://github.com/your-org/forjnot.git')"
+          onclick="navigator.clipboard.writeText('git clone https://github.com/aman-sharma-dev/forjnot.git')"
           aria-label="Copy"
         >
           Copy
         </button>
-        <pre class="overflow-x-auto rounded border bg-background p-4 text-sm font-mono"><code>git clone https://github.com/your-org/forjnot.git</code></pre>
+        <pre class="overflow-x-auto rounded border bg-background p-4 text-sm font-mono"><code>git clone https://github.com/aman-sharma-dev/forjnot.git</code></pre>
       </div>
     </div>
   `,
