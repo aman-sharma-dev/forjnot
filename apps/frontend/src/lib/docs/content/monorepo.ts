@@ -4,6 +4,28 @@ export const monorepo: Doc = {
 	title: "Monorepo Architecture",
 	description:
 		"Why and when to use a monorepo, and the advantages of Forjnot's structure",
+    ogTitle: "Monorepo Architecture",
+    ogDescription: "Why and when to use a monorepo, and the advantages of Forjnot's structure",
+    ogImage: "/forjnot.png",
+    canonical: "https://forjnot.vercel.app/docs/monorepo/",
+    keywords: [
+        "monorepo",
+        "monolithic repository",
+        "code sharing",
+        "dependency management",
+        "turborepo",
+        "nestjs",
+        "nextjs",
+        "forjnot",
+        "repository management",
+        "development workflow",
+        "project structure",
+        "code organization",
+        "shared packages",
+        "developer experience",
+        "ci/cd",
+        "scalable architecture"
+    ],
 	content: `
     <div class="prose prose-slate max-w-none">
       <h1 class="scroll-m-20 text-4xl font-bold tracking-tight" id="monorepo-architecture">🗂️ Monorepo Architecture</h1>

@@ -4,6 +4,22 @@ export const cliDoc: Doc = {
 	title: "CLI Tool",
 	description: "Use the built-in Forjnot CLI to streamline development",
 	slug: "cli",
+	ogTitle: "CLI Tool", 
+	ogDescription: "Use the built-in Forjnot CLI to streamline development",
+	ogImage: "/forjnot.png",
+	canonical: "https://forjnot.vercel.app/docs/cli/",
+	keywords: [
+		"CLI",
+		"Command Line Interface",
+		"Forjnot CLI",
+		"Development Tools",
+		"Developer Workflow",
+		"Build Tools",
+		"Project Management",
+		"Code Generation",
+		"Developer Experience",
+		"TypeScript CLI"
+	],
 	lastUpdated: new Date().toISOString(),
 	content: `
   <div class="prose prose-slate max-w-none">

@@ -3,10 +3,10 @@ import { getDocFromParams } from "../../../lib/docs";
 import DOMPurify from "isomorphic-dompurify";
 
 interface DocsPageProps {
-	params: Promise<{
-		slug: string[];
-	}>;
-}
+	params: {
+	  slug?: string[];
+	};
+  }
 
 export async function generateStaticParams() {
 	return [
@@ -19,29 +19,36 @@ export async function generateStaticParams() {
 	];
 }
 
-export async function generateMetadata({ params }: Readonly<DocsPageProps>) {
-	const resolvedParams = await params;
-	const slugPath = resolvedParams.slug?.length
-		? resolvedParams.slug.join("/")
-		: "getting-started";
+export async function generateMetadata({ params }: DocsPageProps) {
+	const slugPath = params.slug?.length
+	  ? params.slug.join("/")
+	  : "getting-started";
+	
 	const doc = getDocFromParams(slugPath);
-
-	if (!doc) {
-		notFound();
-	}
+  
+	if (!doc) return {};
+  
 	return {
-		title: `Forjnot | ${doc.title}`,
-		description: doc.description,
-		openGraph: {
-			title: `Forjnot | ${doc.title}`,
-			description: doc.description,
-		},
-		twitter: {
-			title: `Forjnot | ${doc.title}`,
-			description: doc.description,
-		}
+	  title: `Forjnot | ${doc.title}`,
+	  description: doc.description, 
+	  keywords: doc.keywords,
+	  openGraph: {
+		title: doc.ogTitle || doc.title,
+		description: doc.ogDescription || doc.description,
+		images: doc.ogImage ? [{ url: doc.ogImage, alt: doc.ogTitle || doc.title }] : [],
+	  },
+	  twitter: {
+		card: "summary_large_image",
+		title: doc.ogTitle || doc.title,
+		description: doc.ogDescription || doc.description,
+		images: doc.ogImage ? [doc.ogImage] : [],
+	  },
+	  alternates: {
+		canonical: doc.canonical,
+	  },
 	};
-}
+  }
+  
 
 export default async function DocsPage({ params }: Readonly<DocsPageProps>) {
 	const resolvedParams = await params;

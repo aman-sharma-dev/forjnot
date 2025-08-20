@@ -13,7 +13,7 @@ interface Heading {
 export function TableOfContents() {
 	const [headings, setHeadings] = useState<Heading[]>([]);
 	const [activeId, setActiveId] = useState<string>("");
-	const pathname = usePathname(); // <-- Add this line
+	const pathname = usePathname();
 
 	useEffect(() => {
 		// Reset states when route changes
@@ -49,7 +49,7 @@ export function TableOfContents() {
 		}, 100);
 
 		return () => clearTimeout(timeoutId);
-	}, [pathname]); // <-- Add pathname as a dependency
+	}, [pathname]);
 
 	if (headings.length === 0) {
 		return null;

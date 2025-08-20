@@ -5,6 +5,22 @@ export const lintingAndFormatting: Doc = {
 	description: "Built-in linting and formatting powered by Biome.js",
 	slug: "linting-formatting",
 	lastUpdated: new Date().toISOString(),
+	ogTitle: "Linting & Formatting",
+	ogDescription: "Built-in linting and formatting powered by Biome.js",
+	ogImage: "/forjnot.png",
+	canonical: "https://forjnot.vercel.app/docs/linting-formatting/",
+	keywords: [
+		"linting",
+		"formatting",
+		"biome.js",
+		"code quality",
+		"typescript",
+		"javascript",
+		"development tools",
+		"code formatting",
+		"static analysis",
+		"code style"
+	],
 	content: `
   <div class="prose prose-slate max-w-none">
     <h2 class="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight">Linting & Formatting</h2>

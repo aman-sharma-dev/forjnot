@@ -4,6 +4,27 @@ export const microservices: Doc = {
 	title: "Microservices",
 	description:
 		"What are microservices, when to use them, their types, and how Forjnot supports scalable microservice architecture.",
+	keywords: [
+		"microservices",
+		"microservice architecture",
+		"distributed systems",
+		"service oriented architecture",
+		"api services",
+		"worker services",
+		"gateway services",
+		"event-driven services",
+		"database services",
+		"scalable architecture",
+		"system design",
+		"backend development",
+		"cloud architecture",
+		"forjnot microservices",
+		"microservice deployment"
+	],
+	ogTitle: "Microservices",
+	ogDescription: "What are microservices, when to use them, their types, and how Forjnot supports scalable microservice architecture",
+	ogImage: "/forjnot.png",
+	canonical: "https://forjnot.vercel.app/docs/microservices/",
 	content: `
     <div class="prose prose-slate max-w-none">
       <h1 class="scroll-m-20 text-4xl font-bold tracking-tight" id="microservices-architecture">🧩 Microservices Architecture</h1>
