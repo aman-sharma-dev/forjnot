@@ -61,23 +61,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-  children,
 }: Readonly<{
   children: React.ReactNode;
-  children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="google-site-verification" content="sLvfizXzY4GNyn2deFnySXKRmvLbpXGrhtSHeQJiq2E" />
-        <link rel="canonical" href="https://forjnot.vercel.app/" />
-      </head>
-      <body className={inter.className}>
-        <ThemeProvider attribute="class">{children}</ThemeProvider>
-      </body>
-    </html>
-  );
   return (
     <html lang="en">
       <head>
