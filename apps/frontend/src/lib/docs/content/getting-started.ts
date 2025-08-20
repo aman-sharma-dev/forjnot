@@ -3,6 +3,22 @@ import { Doc } from "../types";
 export const gettingStarted: Doc = {
 	title: "Getting Started",
 	description: "Learn how to get started with Forjnot",
+	ogTitle: "Getting Started",
+	ogDescription: "Learn how to get started with Forjnot",
+	ogImage: "/forjnot.png",
+	canonical: "https://forjnot.vercel.app/docs/getting-started/",
+	keywords: [
+		"forjnot tutorial",
+		"getting started",
+		"forjnot setup",
+		"forjnot installation",
+		"forjnot guide",
+		"fullstack development",
+		"nestjs",
+		"nextjs",
+		"pnpm",
+		"development setup"
+	],
 	content: `
     <div class="prose prose-slate max-w-none">
       <h1 class="scroll-m-20 text-4xl font-bold tracking-tight" id="getting-started">🚦 Getting Started</h1>
