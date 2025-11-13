@@ -2,10 +2,7 @@ import { NestFactory } from "@nestjs/core";
 import { AppModule } from "./app.module";
 import { env } from "@forjnot/shared-env";
 import { DocumentBuilder, SwaggerModule } from "@nestjs/swagger";
-import {
-	ResponseInterceptor,
-	CheckDependencies,
-} from "@forjnot/shared-utils";
+import { ResponseInterceptor, CheckDependencies } from "@forjnot/shared-utils";
 import { type ILogger, LOGGER_TOKEN } from "@forjnot/shared-logger";
 
 async function bootstrap(): Promise<void> {
@@ -15,6 +12,17 @@ async function bootstrap(): Promise<void> {
 
 	const logger = app.get<ILogger>(LOGGER_TOKEN);
 	app.useLogger(logger);
+
+	// Enable CORS
+	app.enableCors({
+		origin:
+			env.RUNTIME_MODE === "local"
+				? env.FRONTEND_URL_LOCAL
+				: env.RUNTIME_MODE === "development"
+					? env.FRONTEND_URL_DEVELOPMENT
+					: env.FRONTEND_URL_PRODUCTION,
+		credentials: true,
+	});
 
 	if (env.RUNTIME_MODE === "local") {
 		await CheckDependencies(app);
