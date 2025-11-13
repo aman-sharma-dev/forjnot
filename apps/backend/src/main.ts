@@ -13,6 +13,17 @@ async function bootstrap(): Promise<void> {
 	const logger = app.get<ILogger>(LOGGER_TOKEN);
 	app.useLogger(logger);
 
+	// Enable CORS
+	app.enableCors({
+		origin:
+			env.RUNTIME_MODE === "local"
+				? env.FRONTEND_URL_LOCAL
+				: env.RUNTIME_MODE === "development"
+					? env.FRONTEND_URL_DEVELOPMENT
+					: env.FRONTEND_URL_PRODUCTION,
+		credentials: true,
+	});
+
 	if (env.RUNTIME_MODE === "local") {
 		await CheckDependencies(app);
 		const config = new DocumentBuilder()

@@ -5,10 +5,19 @@ down:
 	docker-compose down
 
 test:
-	pnpm --filter backend test
+	pnpm test
 
 lint:
 	pnpm lint
-	
-lint-fix:
-	pnpm lint --fix
+
+format:
+	pnpm format
+
+dev:
+	pnpm dev
+
+build:
+	pnpm build:all
+
+install:
+	pnpm install

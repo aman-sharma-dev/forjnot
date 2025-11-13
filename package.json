@@ -2,7 +2,7 @@
 	"name": "forjnot",
 	"version": "1.0.0",
 	"packageManager": "pnpm@8.15.5",
-	"description": "full stack template",
+	"description": "A high-performance monorepo starter template with NestJS, Next.js, and TurboRepo for scalable full-stack applications",
 	"main": "index.js",
 	"scripts": {
 		"server": "pnpm --filter backend dev",
@@ -26,9 +26,20 @@
 		"!apps/backend/dist/**/*": [],
 		"!apps/frontend/out/**/*": []
 	},
-	"keywords": [],
+	"keywords": [
+		"monorepo",
+		"nestjs",
+		"nextjs",
+		"turborepo",
+		"typescript",
+		"fullstack",
+		"template",
+		"starter",
+		"pnpm",
+		"microservices"
+	],
 	"author": "",
-	"license": "ISC",
+	"license": "MIT",
 	"devDependencies": {
 		"@types/node": "^22.10.7",
 		"husky": "^9.1.7",

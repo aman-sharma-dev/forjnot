@@ -23,10 +23,6 @@ else dotenv.config(); // fallback
 
 const parsed = envSchema.safeParse(process.env);
 
-console.log("🌱 Raw ENV:", {
-	RUNTIME_MODE: process.env.RUNTIME_MODE,
-});
-
 if (!parsed.success) {
 	console.error("Invalid environment variables:", parsed.error.format());
 	process.exit(1);

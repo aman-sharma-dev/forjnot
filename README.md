@@ -50,9 +50,11 @@ Root Files:
 .editorconfig
 .gitignore
 .env.example
+.nvmrc
 biome.json
 docker-compose.yml
-makefile
+LICENSE
+Makefile
 package.json
 pnpm-workspace.yaml
 tsconfig.json / tsconfig.base.json
