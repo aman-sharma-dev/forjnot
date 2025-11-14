@@ -3,14 +3,15 @@ node_modules/
 
 # Environment variables
 .env
+# .env.example should be committed
 
 # Build directories
 dist/
 build/
 .turbo/
 
-# Husky
-.husky/
+# Husky files (keep hooks, ignore internal files)
+.husky/_
 
 # IDE specific files
 .vscode/
@@ -23,5 +24,5 @@ Thumbs.db
 # Logs
 *.log
 
-# PNPM lock file should not be committed unless necessary
-pnpm-lock.yaml
+# PNPM lock file should be committed for consistency
+# pnpm-lock.yaml
