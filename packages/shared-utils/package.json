@@ -10,8 +10,8 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
-		"@nestjs/common": "^11.0.1",
-		"@nestjs/core": "^11.0.1",
-		"rxjs": "^7.8.1"
+		"@nestjs/common": "^11.2.3",
+		"@nestjs/core": "^11.2.3",
+		"rxjs": "^7.8.2"
 	}
 }
