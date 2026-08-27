@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - deploy
+      - deployment
 
 jobs:
   prevent-push:
@@ -12,5 +12,5 @@ jobs:
     steps:
       - name: Stop direct pushes
         run: |
-          echo "🚫 Direct pushes to main or deploy are blocked."
+          echo "🚫 Direct pushes to main or deployment are blocked."
           exit 1
