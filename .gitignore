@@ -8,6 +8,7 @@ node_modules/
 # Build directories
 dist/
 build/
+coverage/
 .turbo/
 
 # Husky files (keep hooks, ignore internal files)

@@ -16,6 +16,8 @@ export function TableOfContents() {
 	const pathname = usePathname();
 
 	useEffect(() => {
+		if (!pathname) return;
+
 		// Reset states when route changes
 		setHeadings([]);
 

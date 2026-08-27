@@ -67,6 +67,14 @@ turbo.json
 
 To get started with Forjnot, follow these steps:
 
+### 0. Check your workstation
+
+```bash
+pnpm run doctor
+```
+
+The doctor identifies missing tools, dependencies, environment configuration, and the active template variant, then gives exact next steps.
+
 ### 1. Install Dependencies
 
 ```bash
@@ -113,6 +121,14 @@ Forjnot is designed to maintain code quality and consistency:
 * **Swagger Docs**: Automatically generated documentation for APIs.
 
 * **Makefile**: Manage project tasks, including builds and testing.
+
+* **One-command validation**: Run the same lint, test, and build gate used by CI.
+
+  ```bash
+  pnpm check
+  ```
+
+* **Two-branch template model**: Develop reusable code on `main`, then sync it forward into `deployment`, which owns the public frontend. See [the branch strategy](docs/BRANCH_STRATEGY.md).
 
 ---
 
